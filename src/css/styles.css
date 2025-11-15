@@ -1,18 +1,80 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-/* Common styles */
-@import url('./reset.css');
-@import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
 
-/* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+#search-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+}
+
+.gallery-item {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.gallery-item img {
+  width: 100%;
+  display: block;
+}
+
+.info {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+#loader {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  color: #555;
+  margin: 20px 0;
+}
+
+.hidden {
+  display: none;
+}
+
+
+#search-form {
+  display: flex;
+  justify-content: center;  
+  align-items: center;     
+  gap: 10px;                 
+  margin: 20px auto;        
+  width: 100%;
+}
+
+#search-form input[type="text"] {
+  width: 300px;
+  padding: 8px 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#search-form button {
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  border: 1px solid #aaa;
+  background: #f3f3f3;
+  border-radius: 4px;
+}
+
+#search-form button:hover {
+  background: #e0e0e0;
+}
+
